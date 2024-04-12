@@ -5,7 +5,7 @@ export const Remaining = () => {
     <>
         <div className="remain">
             <div>
-                <h2>Budget</h2>
+                <h2>Remaining</h2>
                 <div className="budget-amount">$2000</div>
             </div>
         </div>
