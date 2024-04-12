@@ -1,7 +1,7 @@
 
 import ExpenseItem from './ExpenseItems';
 
-const ExpenseList = () => {
+export  const ExpenseList = () => {
     const expenses = [
         { id: 12, name: 'shopping', cost: 40 },
         { id: 13, name: 'holiday', cost: 400 },
@@ -21,4 +21,4 @@ const ExpenseList = () => {
     );
 };
 
-export default ExpenseList;
+// export default ExpenseList;

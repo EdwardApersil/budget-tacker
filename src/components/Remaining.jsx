@@ -1,6 +1,6 @@
 
 
-const Remaining = () => {
+export const Remaining = () => {
   return (
     <>
         <div className="remain">
@@ -13,4 +13,3 @@ const Remaining = () => {
   )
 }
 
-export default Remaining
