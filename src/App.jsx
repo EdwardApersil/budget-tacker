@@ -1,9 +1,8 @@
 import "./App.css";
-import Budget from "./assets/Components/Budget";
-import ExpenseList from "./assets/Components/ExpenseList";
-import Remaining from "./assets/Components/Remaining";
-import Spent from "./assets/Components/Spent";
-
+import { Budget } from "./components/Budget";
+import { Remaining } from "./components/Remaining";
+import { Spent } from "./components/Spent";
+import { ExpenseList } from "./components/ExpenseList";
 function App() {
   return (
     <>
