@@ -4,7 +4,7 @@ export const Spent = () => {
     <>
         <div className="budget">
             <div>
-                <h2>Budget</h2>
+                <h2>Spent</h2>
                 <div className="budget-amount">$2000</div>
             </div>
             <button>Edit</button>
