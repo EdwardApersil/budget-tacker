@@ -1,8 +1,8 @@
-import { useContext, useState } from 'react';
+import { useState, useContext } from 'react';
 import { AppContext } from '../context/AppContext';
 import ExpenseItem from './ExpenseItems';
 
-export  const ExpenseList = () => {
+export const SearchExpense = () => {
     const { expenses } = useContext(AppContext);
     const [searchWord, setSearchWord] = useState('');
 
@@ -16,15 +16,16 @@ export  const ExpenseList = () => {
                 <input type="text" onChange={handleSearch} placeholder="Search..." />
                 <button type="submit">Search</button>
             </form>
-            <div className="card">
+            <ul>
                 {expenses
-                .filter((expense) => expense.name.toLowerCase().includes(searchWord))
-                .map((expense) => (
-                    <ExpenseItem key={expense.id} name={expense.name} cost={expense.cost}  time={expense.time} category={expense.category} priorty={expense.priority}/>
-                ))}
-            </div>
+                    .filter((expense) => expense.name.toLowerCase().includes(searchWord))
+                    .map((filteredExpense) => (
+                        // <li key={filteredExpense.id}>{filteredExpense.name}</li>
+                        <ExpenseItem key={filteredExpense.id} cost={filteredExpense.cost} name={filteredExpense.name}/>
+                    ))}
+            </ul>
         </div>
-    );
-};
+    )
+}
 
-// export default ExpenseList;
+// export default SearchExpense;

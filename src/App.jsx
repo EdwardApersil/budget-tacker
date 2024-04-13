@@ -5,6 +5,7 @@ import { Spent } from "./components/Spent";
 import { ExpenseList } from "./components/ExpenseList";
 import { AddExpenseForm } from "./components/AddExpenseForm";
 import { AppProvider } from "./context/AppContext";
+// import { SearchExpense } from "./components/SearchExpense";
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
       <AppProvider>
         <div className="container">
           <div className="header">
-            <h1>Budget Tracker</h1>
+            <h1>Expenses Tracker</h1>
           </div>
 
           <div className="summary-container">
@@ -22,6 +23,7 @@ function App() {
           </div>
 
           <h3 className="title">Expenses</h3>
+          {/* <SearchExpense/> */}
           <ExpenseList />
           <AddExpenseForm />
         </div>
